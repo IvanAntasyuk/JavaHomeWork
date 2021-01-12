@@ -18,10 +18,31 @@ abstract class Animal {
         this.color = color;
     }
 
-    abstract boolean run(double distance);
+    boolean run(double distance) {
+        if (distance >= 0 && distance <= MAX_RUN) {
+            System.out.println(name + " пробежал " + distance + ":" + true);
+            return true;
+        }
+        return false;
 
-    abstract boolean swim(double distance);
+    }
 
-    abstract boolean jump(double height);
+    boolean swim(double distance) {
+        if (distance >= 0 && distance <= MAX_SWIM) {
+            System.out.println(name + " проплыл " + distance + ":" + true);
+            return true;
+        }
+        return false;
+
+    }
+
+    boolean jump(double height) {
+        if (height >= 0 && height <= MAX_JUMP) {
+            System.out.println(name + " прыгнул " + height + ":" + true);
+            return true;
+        }
+        return false;
+
+    }
 
 }

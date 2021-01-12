@@ -12,28 +12,16 @@ public class Dog  extends Animal{
 
     @Override
     boolean run(double distance) {
-        if (distance>=0 && distance <=MAX_RUN){
-            System.out.println("Dog run : true");
-           return true;
-        }
-        return false;
+        return super.run(distance);
     }
 
     @Override
     boolean swim(double distance) {
-        if (distance>=0 && distance <=MAX_SWIM){
-            System.out.println("Dog swim : true");
-            return true;
-        }
-        return false;
+        return super.swim(distance);
     }
 
     @Override
     boolean jump(double height) {
-        if (height>=0 && height <=MAX_JUMP){
-            System.out.println("Dog jump : true");
-            return true;
-        }
-        return false;
+        return super.jump(height);
     }
 }

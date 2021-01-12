@@ -8,27 +8,18 @@ public class Cat extends Animal {
         this.MAX_JUMP = 2;
     }
 
-
     @Override
     boolean run(double distance) {
-        if (distance >= 0 && distance <= MAX_RUN) {
-            System.out.println("Cat run : true");
-            return true;
-        }
-        return false;
+        return super.run(distance);
     }
 
-    @Override
     boolean swim(double distance) {
-        return false;
+        System.out.println(name + " Не умеет плавать");
+        return true;
     }
 
     @Override
     boolean jump(double height) {
-        if (height >= 0 && height <= MAX_JUMP) {
-            System.out.println("Cat jump : true");
-            return true;
-        }
-        return false;
+        return super.jump(height);
     }
 }
