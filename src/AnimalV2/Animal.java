@@ -7,6 +7,10 @@ abstract class Animal {
     protected String color;
     protected int age;
 
+    protected double MAX_RUN;
+    protected double MAX_SWIM;
+    protected double MAX_JUMP;
+
     public Animal(String name, String species, String color, int age) {
         this.name = name;
         this.species = species;

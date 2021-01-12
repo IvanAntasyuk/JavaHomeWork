@@ -1,12 +1,12 @@
 package AnimalV2;
 
 public class Dog  extends Animal{
-    private final double MAX_RUN = 200.0;
-    private final double MAX_JUMP = 10.0;
-    private final double MAX_SWIM = 99.0;
 
     public Dog(String name, String species, String color, int age) {
         super(name, species, color, age);
+        this.MAX_JUMP = 12;
+        this.MAX_SWIM = 20;
+        this.MAX_RUN = 100;
     }
 
 

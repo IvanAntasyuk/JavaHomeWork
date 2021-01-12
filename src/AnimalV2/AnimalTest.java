@@ -9,7 +9,7 @@ public class AnimalTest {
         Cat cat = new Cat("Tom","Thai","Black",1);
         cat.run(5);
         cat.swim(100);
-        cat.jump(10);
+        cat.jump(1);
 
     }
 }
