@@ -4,9 +4,9 @@ public class Dog  extends Animal{
 
     public Dog(String name, String species, String color, int age) {
         super(name, species, color, age);
-        this.MAX_JUMP = 12;
-        this.MAX_SWIM = 20;
-        this.MAX_RUN = 100;
+        this.maxJump = 12;
+        this.maxSwim = 20;
+        this.maxRun = 100;
     }
 
 

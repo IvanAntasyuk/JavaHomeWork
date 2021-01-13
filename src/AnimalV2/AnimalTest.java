@@ -11,5 +11,15 @@ public class AnimalTest {
         cat.jump(10);
         cat.swim(2);
         cat.run(10);
+
+        MiniDog miniDog = new MiniDog("Pimp","Spitz","Black-White",6);
+        miniDog.jump(11);
+        miniDog.swim(10);
+        miniDog.run(50);
+
+        miniDog.countAnimal();
+
+
+
     }
 }

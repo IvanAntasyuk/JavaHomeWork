@@ -1,11 +1,11 @@
 package AnimalV2;
 
-public class Cat extends Animal {
-
-    public Cat(String name, String species, String color, int age) {
+public class MiniDog extends Dog{
+    public MiniDog(String name, String species, String color, int age) {
         super(name, species, color, age);
-        this.maxRun = 50.0;
-        this.maxJump = 2;
+        this.maxJump = 6;
+        this.maxRun = 50;
+        this.maxSwim = 10;
     }
 
     @Override
@@ -13,9 +13,9 @@ public class Cat extends Animal {
         return super.run(distance);
     }
 
+    @Override
     boolean swim(double distance) {
-        System.out.println(name + " Не умеет плавать");
-        return true;
+        return super.swim(distance);
     }
 
     @Override
