@@ -8,9 +8,9 @@ abstract class Animal {
     protected String color;
     protected int age;
 
-    protected double maxRun;
-    protected double maxSwim;
-    protected double maxJump;
+    protected int maxRun;
+    protected int maxSwim;
+    protected int maxJump;
 
     public Animal(String name, String species, String color, int age) {
         this.name = name;
@@ -20,7 +20,7 @@ abstract class Animal {
         count++;
     }
 
-    boolean run(double distance) {
+    boolean run(int distance) {
         if (distance >= 0 && distance <= maxRun) {
             System.out.println(name + " пробежал " + distance + " : " + true);
             return true;
@@ -29,7 +29,7 @@ abstract class Animal {
 
     }
 
-    boolean swim(double distance) {
+    boolean swim(int distance) {
         if (distance >= 0 && distance <= maxSwim) {
             System.out.println(name + " проплыл " + distance + " : " + true);
             return true;
@@ -38,7 +38,7 @@ abstract class Animal {
 
     }
 
-    boolean jump(double height) {
+    boolean jump(int height) {
         if (height >= 0 && height <= maxJump) {
             System.out.println(name + " прыгнул " + height + " : " + true);
             return true;

@@ -9,17 +9,17 @@ public class MiniDog extends Dog{
     }
 
     @Override
-    boolean run(double distance) {
+    boolean run(int distance) {
         return super.run(distance);
     }
 
     @Override
-    boolean swim(double distance) {
+    boolean swim(int distance) {
         return super.swim(distance);
     }
 
     @Override
-    boolean jump(double height) {
+    boolean jump(int height) {
         return super.jump(height);
     }
 }
